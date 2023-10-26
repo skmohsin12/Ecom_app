@@ -1,0 +1,103 @@
+.container{
+    display: flex;
+}
+
+.left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* .logo{} */
+.desc{
+    margin: 20px 0px;
+}
+
+.socialContainer{
+    display: flex;
+}
+
+.socialIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+}
+
+.first{
+    background-color: #3B5999;
+}
+
+.second{
+    background-color: #E4405F;
+}
+
+.third{
+    background-color: #55ACEE;
+}
+
+.fourth{
+    background-color: #E60023;
+}
+
+
+
+/* styles for center div */
+.center{
+    flex: 1;
+    padding: 20px;
+}
+
+.title{
+    margin-bottom: 30px;
+}
+
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listItem{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+
+.right{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactItem{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.payment{
+    width: 50%;
+}
+
+@media screen and (max-width: 720px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .center{
+        display: none;
+    }
+
+    .right{
+        background-color: #fff8f8;
+    }
+}

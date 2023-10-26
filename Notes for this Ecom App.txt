@@ -1,0 +1,26 @@
+
+
+1. first create an GitHub repository within your GitHub accout.
+
+2. Then within your local created react-app --> open within folder and delete hidden .git folder.
+
+3. Then use the commands :
+    git init
+    git add .
+    git commit -m "Initial commit"
+
+4. Then use the commands :
+    git remote add origin https://github.com/skmohsin12/Ecom_app.git  or your repository url.
+
+
+5. May be pushing to Main existing default branch from GitHub may not allowed you to push.
+
+6. Therefore, create an new brach using git checkout -b master  or  branch_name ---> then take a pull from main branch if required.
+
+7. Push the code within master branch using command git push origin master.
+
+
+
+//now chech open your GitHub repository --> from the branches dropdown (there may be two branches first one will
+  be the defaullt main branch and the second one will be your created master branch.
+  select your created brach and you will see that your pushed code will be right there.

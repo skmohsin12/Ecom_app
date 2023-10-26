@@ -1,0 +1,68 @@
+/* writing info first for hover effect */
+.info{
+    opacity: 0; /* firtly we cant see - until we hover & on hover we set another opacity to see */
+    width: 100%;
+    height: 100%;
+
+    /* this is child inside and we want to align this child div inside parent - thats why we provid it position : absolute */
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.container{
+    flex: 1;
+    margin: 5px;
+    min-width: 280px; 
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5fbfd;
+
+    /* this is parent - thats why we provid it position : relative */
+    position: relative;
+
+    &:hover .info{
+        opacity: 1;
+    }
+}
+
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+}
+
+.image{
+    height: 75%;
+    z-index: 2;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: all 0.5s ease;
+
+    &:hover {
+        background-color: #c3eeee;
+        transform: scale(1.1);
+    }
+}

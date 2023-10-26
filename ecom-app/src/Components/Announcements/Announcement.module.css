@@ -1,0 +1,33 @@
+@keyframes moveText {
+    0% {
+        transform: translateX(200%); /* Start from the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the left */
+    }
+}
+
+.container{
+    height: 30px;
+    background-color: teal;
+    color: white;
+    display: flex;
+    justify-content: flex-start; /* Start from the left */
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide the overflowed text */
+    cursor: pointer;
+}
+
+.container.paused > span {
+    position: absolute;
+    animation-play-state: paused; /* Pause the animation */
+}
+
+.container > span {
+    position: absolute; /* Position the span absolutely */
+    animation: moveText 20s linear infinite; /* Adjust the duration as needed */
+    animation-iteration-count: infinite; /* Keep it running indefinitely */
+}
